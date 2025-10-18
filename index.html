@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Wizards - Profile Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="avatar">
+        <img 
+          src="bethel.jpg" 
+          alt="User Avatar" 
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <section class="info">
+        <header>
+          <h2 data-testid="test-user-name">Bethel Francis</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          A passionate front-end developer from Nigeria, focused on building clean, user-friendly interfaces and improving digital experiences.
+        </p>
+
+        <p class="time">
+          Current Time (ms): 
+          <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+
+        <nav aria-label="social links" data-testid="test-user-social-links">
+          <ul>
+            <li><a data-testid="test-user-social-twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a data-testid="test-user-social-github" href="http://github.com/Bethelfrancis" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a data-testid="test-user-social-linkedin" href="http://linkedin.com/in/bethel-francis-5b4346328/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <section class="lists">
+          <div class="hobbies">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Gaming</li>
+              <li>Designing</li>
+              <li>Coding</li>
+            </ul>
+          </div>
+
+          <div class="dislikes">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow internet</li>
+              <li>Messy code</li>
+              <li>Dark themes 😅</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
